@@ -1,0 +1,124 @@
+.background__img{
+    width: 100%;
+    height: 100%;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__body{
+    /* width: 300px;
+    height: 300px; */
+    background-color: var(--white-color);
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.modal__inner{
+
+}
+
+.auth-form{
+    padding: 40px;
+}
+
+.auth-form__header{
+    text-align: center;
+}
+
+.auth-form__img{
+
+}
+
+.img-form{
+    width: 180px;
+    height: 50px;
+}
+
+.auth-form__start-free{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 24px 0;
+}
+
+.login-gg{
+    display: flex;
+    width: 400px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.login-gg a{
+    text-decoration: none;
+    color: #6e6b78;
+}
+
+.login__icon{
+    padding-right: 10px;
+}
+
+.or{
+    margin: 26px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    height: 33px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#email,
+#password{
+    width: 400px;
+}
+
+.continue{
+}
+
+#conitue-btn{
+    width: 400px;
+    height: 40px;
+    background-color: #842cfe;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+#continue-btn:hover{
+    background-color: #5f1eba;
+}
+
+.auth-form__footer{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.agree a,
+.already a{
+    color: #842cfe;
+}
