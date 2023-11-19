@@ -41,23 +41,37 @@ function checkInfo(){
     var testEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
 
     var pass = document.getElementById('password').value
+    document.getElementById('firstError').textContent = '';
+    document.getElementById('LastError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+    document.getElementById('passwordError').textContent = '';
+    document.getElementById('mess-error').textContent = '';
 
     if(first == ""){
-        alert("First name is required")
+        displayErrorMessage("firstError", "First name is required")
     }    
     else if(last == ""){
-        alert("Last name is required") 
+        displayErrorMessage("LastError", "Last name is required")
+        // alert("Last name is required") 
     }
     else if(email == ""){
-        alert("Email is required")
+        displayErrorMessage("emailError", "Email is required")
+        // alert("Email is required")
     }
     else if(!testEmail.test(email)){
-        alert("Invalid email")
+        displayErrorMessage("emailError", "Invalid email")
+        // alert("Invalid email")
     }
     else if(pass == ""){
-        alert("Password is required")
+        displayErrorMessage("passwordError", "Password is required")
+        // alert("Password is required")
     }
     else{
-        alert("Login success")
+        displayErrorMessage("mess-error", "Login success")
+        // alert("Login success")
     }
+}
+
+function displayErrorMessage(id, message) {
+    document.getElementById(id).textContent = message;
 }

@@ -122,3 +122,15 @@ input{
 .already a{
     color: #842cfe;
 }
+
+.error_messa{
+    color: red;
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+#mess-error{
+    color: green;
+    margin-top: 5px;
+    font-size: 2rem;
+}

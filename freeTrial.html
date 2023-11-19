@@ -46,25 +46,30 @@
                         <div class="name">
                             <div class="first">
                                 <input type="text" name="" id="firstName" placeholder="First name">
+                                <p id="firstError" class="error_messa"></p>
                             </div>
-
+                            
                             <div class="last">
                                 <input type="text" name="" id="lastName" placeholder="Last name">
+                                <p id="LastError" class="error_messa"></p>
                             </div>
                         </div>
-
+                        
                         <div class="email">
                             <input type="text" name="" id="email" placeholder="Email">
+                            <p id="emailError" class="error_messa"></p>
                         </div>
 
                         <div class="password">
                             <input type="password" name="" id="password" placeholder="Password">
+                            <p id="passwordError" class="error_messa"></p>
                         </div>
-
+                        
                         <div class="continue">
                             <input type="button" value="Continue" id="conitue-btn" onclick="checkInfo()">
                         </div>
                     </div>
+                    <p id="mess-error"></p>
 
                     <div class="auth-form__footer">
                         <div class="agree">
